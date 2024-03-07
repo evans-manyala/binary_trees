@@ -8,11 +8,10 @@
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
 	if (!node || !node->parent)
-		return (NULL); // Handle NULL node or parent cases
-
-	// Check if the node is the left or right child of its parent
+		return (NULL);
+	;
 	if (node->parent->left == node)
-		return (node->parent->right); // Sibling is the right child
+		return (node->parent->right);
 	else
-		return (node->parent->left); // Sibling is the left child
+		return (node->parent->left);
 }
