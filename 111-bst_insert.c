@@ -26,7 +26,7 @@ bst_t *bst_insert(bst_t **tree, int value)
 		return (new_node);
 	}
 
-		bst_t *current_node = *tree;
+	bst_t *current_node = *tree;
 	while (1)
 	{
 		if (value < current_node->n)
